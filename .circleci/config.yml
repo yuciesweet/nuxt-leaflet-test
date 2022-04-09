@@ -27,6 +27,9 @@ jobs:
           name: install builder
           command: npm install @nuxt/builder --save
       - run:
+          name: instal:?
+          command: npm install
+      - run:
           name: build project
           command: npm run build
       - run:

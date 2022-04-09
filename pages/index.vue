@@ -18,7 +18,7 @@ export default{
         return{
           // leafletの設定
           center: [38.856355,141.615593],
-          zoom: 12,
+          zoom: 13,
           url: "https://{s}.tile.osm.org/{z}/{x}/{y}.png",
           // マーカーを置く場所一覧（観光地）
           marker: {
