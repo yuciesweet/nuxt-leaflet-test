@@ -21,6 +21,9 @@ jobs:
           name: install axios
           command: npm install @nuxtjs/axios --save
       - run:
+          name: install pwa
+          command: npm install @nuxtjs/pwa --save
+      - run:
           name: build project
           command: npm run build
       - run:
