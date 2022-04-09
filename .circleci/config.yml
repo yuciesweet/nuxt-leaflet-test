@@ -24,6 +24,9 @@ jobs:
           name: install pwa
           command: npm install @nuxtjs/pwa --save
       - run:
+          name: install builder
+          command: npm install @nuxt/builder --save
+      - run:
           name: build project
           command: npm run build
       - run:
