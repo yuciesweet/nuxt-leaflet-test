@@ -15,8 +15,11 @@ jobs:
           name: install map
           command: npm install nuxt-leaflet --save
       - run:
-          name: install map
+          name: install typescripit-build
           command: npm install @nuxt/typescript-build --save
+      - run:
+          name: install axios
+          command: npm install @nuxt/axios --save
       - run:
           name: build project
           command: npm run build
