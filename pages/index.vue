@@ -20,7 +20,7 @@ export default{
           center: [38.856355,141.615593],
           zoom: 13,
           url: "https://{s}.tile.osm.org/{z}/{x}/{y}.png",
-          // マーカーを置く場所一覧（観光地）
+          // マーカを置く場所一覧（観光地）
           marker: {
             center:  [38.856355,141.615593],
             kugunaribeach: [38.873171,141.63164],
