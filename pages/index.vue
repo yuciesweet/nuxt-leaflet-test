@@ -1,42 +1,87 @@
 <template>
-    <div id="map">
-     <no-ssr>
-       <!-- 気仙沼大島の緯度・経度 -->
-       <l-map :zoom="zoom" :center="center">
-         <l-tile-layer :url="url"></l-tile-layer>
-         <l-marker v-for="marker of marker" :lat-lng="marker"}></l-marker>
-       </l-map>
-     </no-ssr>
-    </div>
-  </template>
+  <v-row justify="center" align="center">
+    <v-col cols="12" sm="8" md="6">
+      <v-card class="logo py-4 d-flex justify-center">
+        <NuxtLogo />
+        <VuetifyLogo />
+      </v-card>
+      <v-card>
+        <v-card-title class="headline">
+          Welcome to the Vuetify + Nuxt.js template ...!?ok
+        </v-card-title>
+        <v-card-text>
+          <p>
+            Vuetify is a progressive Material Design component framework for
+            Vue.js. It was designed to empower developers to create amazing
+            applications.
+          </p>
+          <p>
+            For more information on Vuetify, check out the
+            <a
+              href="https://vuetifyjs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              documentation </a
+            >.
+          </p>
+          <p>
+            If you have questions, please join the official
+            <a
+              href="https://chat.vuetifyjs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="chat"
+            >
+              discord </a
+            >.
+          </p>
+          <p>
+            Find a bug? Report it on the github
+            <a
+              href="https://github.com/vuetifyjs/vuetify/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="contribute"
+            >
+              issue board </a
+            >.
+          </p>
+          <p>
+            Thank you for developing with Vuetify and I look forward to bringing
+            more exciting features in the future.
+          </p>
+          <div class="text-xs-right">
+            <em><small>&mdash; John Leider</small></em>
+          </div>
+          <hr class="my-3" />
+          <a
+            href="https://nuxtjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Nuxt Documentation
+          </a>
+          <br />
+          <a
+            href="https://github.com/nuxt/nuxt.js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Nuxt GitHub
+          </a>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer />
+          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-col>
+  </v-row>
+</template>
 
-<script type="module" lang="ts">
-//import Vue from '../node_modules/vue'
-
-export default{
-      data() {
-        return{
-          // leafletの設定
-          center: [38.856355,141.615593],
-          zoom: 12,
-          url: "https://{s}.tile.osm.org/{z}/{x}/{y}.png",
-          // マーカーを置く場所一覧（観光地）
-          marker: {
-            center:  [38.856355,141.615593],
-            kugunaribeach: [38.873171,141.63164],
-            mtkame: [38.87373,141.617855],
-            tatsumai: [38.830445,141.624526],
-            kodanobeach: [38.851971,141.622216],
-            bridge: [38.878459,141.606309]
-          }
-        }
-      }
-    }
+<script>
+export default {
+  name: 'IndexPage',
+}
 </script>
-
-<style scoped>
-    #map {
-        height: 400px;
-        width: 400px;
-    }
-</style>
