@@ -6,7 +6,7 @@
 </template>
 
 <!-- スクリプト -->
-<script>
+<script type="module">
 export default {
   data: function() {
     return {
