@@ -10,8 +10,8 @@
     </div>
   </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script type="module" lang="ts">
+import Vue from "../node_modules/vue"   
 
 export default{
       data() {
