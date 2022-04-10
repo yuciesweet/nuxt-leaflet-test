@@ -11,7 +11,7 @@
   </template>
 
 <script type="module" lang="ts">
-import Vue from "../node_modules/vue"   
+import Vue from "../node_modules/vue/dist/vue.esm"   
 
 export default{
       data() {
